@@ -24,7 +24,7 @@ Used this Authenctication System to make sure the user is logged in before acces
 Run Locally
 Clone the project
 
-  git clone https://github.com/yashjoshi-dotcom/College_Bazaar.git
+  git clone https://github.com/Nethra-RS/Student-swap-shop.git
 Go to the project directory
 
   cd SWAPITALL
