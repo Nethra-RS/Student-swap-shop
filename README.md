@@ -1,43 +1,52 @@
-# eBay Clone / (ebay-clone)
+# SWAPITALL
 
-### Learn how to build this!
+This Project SWAPITALL aims to connect University students to sell and buy their used items. Sellers get a convenient platform to list their items, and Buyers get books and other articles at low prices, along with a chat feature to clear any queries they may have with the product.
 
-If you'd like a step-by-step guide on how to build this just **CLICK THE IMAGE BELOW**
+Features and Tech Stack
+ReactJs
+Used this framework to build the frontend of the website as a SPA Single Page Application to procide somooth user experience.
 
-[![GO TO JOHN WEEKS DEV TUTORIAL VIDEOS](https://github.com/John-Weeks-Dev/ebay-clone/assets/108229029/1d1d9f20-0f5b-4d00-8d5a-9aca0d3e414c)](https://www.youtube.com/watch?v=LtPYuFhYf1w)
+Mongodb Atlas
+Used for maintaining database of students registering on the site as well as details of all the item listings.
 
-Come and check out my YOUTUBE channel for lots more tutorials -> https://www.youtube.com/@johnweeksdev
+Node Js and Express framework
+Used for building the backend server of the project.
 
-**LIKE**, **SUBSCRIBE**, and **SMASH THE NOTIFICATION BELL**!!!
+Bcrypt Library
+Used in sync with Node Js to ensure that passwords are properly hashed before being placed into the Database
 
-## App Setup (localhost)
+Socket.io
+Used to setup text Chat Application between Buyer and the seller.
 
-```
-git clone https://github.com/John-Weeks-Dev/ebay-clone.git
+JWT
+Used this Authenctication System to make sure the user is logged in before accessing any personal info on the site
 
-cp .env.example .env
-```
+Run Locally
+Clone the project
 
-You'll have to set up a Supabase account & Stripe account, then add all of the details into your .env file.
+  git clone https://github.com/yashjoshi-dotcom/College_Bazaar.git
+Go to the project directory
 
-Once you've connected your application to Supabase. You'll also need to set up the Auth Providers:
-    Google [Google](https://cloud.google.com)
-    
-    https://supabase.com/docs/guides/auth/social-login/auth-google
-    
-Now run the command to migrate your database tables and run your seed file.
-    
-```
-npx prisma migrate dev --name init
+  cd SWAPITALL
+Split the terminal to run both frontend and backend conviniently.
+To Open frontend directory.
 
-npx prisma generate
+cd .\frontend\
+To Open backend directory.
 
-npx prisma db seed
+cd .\backend\
+Install dependencies on both frontend and backend folder
 
-npm i
+  npm install
+Start the frontend React application
 
-npm run dev
-```
+  npm run start
+Start the backend Server
 
-You should be good to go! If you need any more help, take a look at the tutorial video by clicking the image above.
+  nodemon app.js
+Please make sure you have config.env file setup in the backend directory. The Format is demostrated in config.env.example file.
+
+Demo Video
+
+
 
